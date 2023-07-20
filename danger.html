@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/4e58350353.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Оспасные отходы</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: rgba(217, 225, 193, 0.573);
+    }
+
+    .fa-recycle {
+      color: rgba(98, 121, 9, 0.777);
+    }
+
+    .nav-color {
+      background-color: rgba(104, 128, 9, 0.422);
+    }
+
+    .nav-button {
+      background-color: rgba(98, 121, 9, 0.777);
+      border: solid 1px rgb(200, 225, 193);
+      color: rgb(229, 235, 240);
+    }
+
+    .nav-button:hover {
+      background-color: rgba(204, 241, 57, 0.581);
+      color: rgba(72, 88, 7, 0.984);
+      border: solid 1px rgb(221, 234, 217);
+    }
+
+    .nav-t {
+      color: rgb(255, 255, 255) !important;
+      text-shadow: 1px 1px 1px rgba(98, 121, 9, 0.777) !important;
+    }
+
+    .nav-t:hover {
+      color: rgba(72, 88, 7, 0.984) !important;
+      text-shadow: 1px 1px 1px rgb(255, 255, 255) !important;
+    }
+
+    .header {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+    }
+
+    h2 {
+      color: rgb(60, 150, 8);
+    }
+
+    textarea {
+      font-size: 1.25rem !important;
+    }
+
+    .gradient-icon {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 121, 9, 0.777)), to(rgba(98, 121, 9, 0.777)));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: initial;
+    }
+
+    .gradient-icon:hover {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(179, 215, 32, 0.777)), to(rgba(179, 215, 32, 0.777)));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: initial;
+    }
+
+    .footer-botton {
+      background-color: rgba(98, 121, 9, 0.777);
+      border: solid 1px rgb(200, 225, 193);
+      color: rgb(229, 235, 240);
+    }
+
+    .footer-botton:hover {
+      background-color: rgba(204, 241, 57, 0.581);
+      color: rgba(72, 88, 7, 0.984);
+      border: solid 1px rgb(221, 234, 217);
+    }
+
+    .email {
+      color: rgba(98, 121, 9, 0.777);
+    }
+
+    .email:hover {
+      color: rgba(157, 188, 29, 0.777)
+    }
+
+    .tel {
+      color: rgba(98, 121, 9, 0.777);
+    }
+
+    .tel:hover {
+      color: rgba(157, 188, 29, 0.777)
+    }
+
+    .main-text {
+      color: rgba(98, 121, 9, 0.777);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar starts -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light main-navbar nav-color">
+    <a class="navbar-brand" href="index.html"><i class="fa-sharp fa-solid fa-recycle fa-xl"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link nav-t" href="/">Главная <span class="sr-only">(текущая)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-t" href="ents.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Энциклопедия
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-t" href="ents.html">Виды вторсырья</a>
+            <a class="dropdown-item nav-t" href="danger.html">Опасные отходы</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-t" href="/">С чего начать</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-t" href="#">Контакты</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0 nav-button" type="submit">Задать вопрос</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Navbar ends -->
+
+  <!-- Media starts-->
+  <div class="row header">
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Эко-энциклопедия</h5>
+          <p class="card-text">Данный сайт предоставляет информацию о двухпоточной системе сортировки отходов, их
+            переработке и сортировке.</p>
+          <p class="card-text">Также в разделе "Энциклопедия" есть подробная информация о каждом виде отходов с
+            местами куда их можно сдать и что из них можно получить в результате переработки.</p>
+          <a href="ents.html" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card ">
+        <div class="card-body ">
+          <h5 class="card-title text-center"><i class="fa-solid fa-ban fa-lg" style="color: #ecb622;"></i>Что нельзя выбрасывать в
+            бак для раздельного сбора отходов?<i class="fa-solid fa-ban fa-lg" style="color: #ecb622;"></i></h5>
+          <p class="card-text">
+            В баки для раздельного сбора отходов нельзя выбрасывать батарейки и аккумуляторы, лампочки и осветительные
+            приборы, градусники и всё, что содержит ртуть, а также биологические, медицинские и химические отходы. Для
+            их утилизации разработаны специальные правила, про которые вы можете узнать нажав кнопку ниже.
+          </p>
+          <p class="card-text">Опасными отходами называют отходы, которые содержат вредные вещества, обладающие опасными
+            свойствами (токсичностью, взрывоопасностью, пожароопасностью, высокой реакционной способностью) или
+            содержащие возбудителей инфекционных болезней, либо которые могут представлять непосредственную или
+            потенциальную опасность для окружающей природной среды и здоровья человека самостоятельно или при вступлении
+            в контакт с другими веществами.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5>Как сортировать отходы по бакам?</h5>
+          <p class="card-text">В синий: пластик, стекло, металл, макулатуру. То есть отходы, которые послужат
+            дальше в
+            угоду
+            пользе – их можно переработать.
+          </p>
+          <p class="card-text">В серый: выбрасывать всё, что не вошло в синий. Это остатки еды, средства личной
+            гигиены, а также отходы, которые не перерабатываются.
+          </p>
+          <a href="index.html" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Media ends-->
+
+  <!--Content starts-->
+  <div class="row m-4">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_batareiki.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="/" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_electrotech.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="/" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_gradusnik.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_Lampy.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row m-4">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_lekarstva.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_Shiny.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/Kartochka_kartridge.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/image_2020-06-01_10-11-14.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Тут вы можете узнать подробнее об этом вторсырье, перерабатываемое ли оно и куда можно
+            сдать.</p>
+          <a href="#" class="btn btn-primary nav-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Content ends-->
+
+  <!--Footer starts-->
+  <div class="container">
+    <h3 class="text-center my-5 main-text">Эко-энциклопедия. Связаться с нами.</h3>
+    <div class="row">
+      <div class="col-md-5">
+        <h5 class="text-center">Контакты</h5>
+        <h6 class="mb-0">Адрес:</h6>
+        <p>г. Москва, Ромашковый проспект, д. 5, стр. 5</p>
+        <h6 class="mb-0">Телефон:</h6>
+        <p><a class="tel" href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+        <h6 class="mb-0">Е-mail:</h6>
+        <p><a class="email" href="ecoents@gmail.ru">ecoents@gmail.ru</a></p>
+        <h6 class="mb-0">График работы:</h6>
+        <p class="mb-0">Понедельник – Четверг: с 9:00 до 17:45,</p>
+        <p>Пятница: с 9:00 до 16:30</p>
+      </div>
+      <div class="col-md-7">
+        <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="E-mail" required />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="3" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-info btn-lg btn-block footer-botton" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex flex-row-reverse">
+      <div class="p-1">
+        <div> <a href=/"><i class="fa-brands fa-telegram fa-2x gradient-icon"></i></a></div>
+      </div>
+      <div class=" p-1">
+        <div> <a href="/"><i class="fa-brands fa-vk fa-2x gradient-icon"></i></a></div>
+      </div>
+      <div class="p-1">
+        <div><a href="/"><i class="fa-brands fa-square-instagram fa-2x gradient-icon"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <!--Footer ends-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
